@@ -8,8 +8,6 @@ A full-stack movie search application that allows users to search for movies and
 ✅ Redis-based caching with TTL and size limits</br>
 ✅ Secure API key management</br>
 ✅ CORS configuration for cross-origin requests</br>
-✅ Error handling and validation</br>
-✅ Comprehensive logging</br>
 
 # #Frontend
 
