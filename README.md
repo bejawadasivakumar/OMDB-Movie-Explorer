@@ -14,3 +14,5 @@ A full-stack movie search application that allows users to search for movies and
 ✅ Search Dashboard - Intuitive search interface</br>
 ✅ Results Grid - Displays movie posters, titles, and release years</br>
 ✅ Detail View - Comprehensive information (Plot, Director, Actors, Ratings)</br>
+
+Run redis in docker : docker exec -it redis-cache redis-cli
