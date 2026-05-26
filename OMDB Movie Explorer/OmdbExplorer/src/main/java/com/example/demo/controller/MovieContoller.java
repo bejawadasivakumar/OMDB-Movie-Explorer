@@ -22,6 +22,7 @@ public class MovieContoller {
 	
 	@GetMapping("/search")
 	public ResponseEntity<?> search(@RequestParam String title){
+		
 		MovieSearchResponse movies = movieService.search(title);
 		if(!"false".equalsIgnoreCase(movies.getResponse())) {
 		return new ResponseEntity<>(movies,HttpStatus.OK);
