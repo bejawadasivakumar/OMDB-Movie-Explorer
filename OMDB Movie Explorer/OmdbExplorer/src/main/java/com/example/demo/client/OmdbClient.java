@@ -33,6 +33,22 @@ public class OmdbClient {
 		/* String url = baseUrl + "apikey=" + apiKey + "&s=" + title;*/
 		return restTemplate.getForObject(uri,MovieSearchResponse.class);
 	}
+	/*
+	MovieSearchResponse response = webClient
+        .get()
+        .uri(uriBuilder -> uriBuilder
+                .queryParam("s", "Avengers")
+                .build())
+        .header("X-API-KEY", apiKey) // we can use APIKey as Header not in query parameter as above
+        .retrieve()
+        .bodyToMono(MovieSearchResponse.class)
+        .block();
+		Disadvantages of using Query parameter:
+		Problems:
+		API key appears in browser history.
+		API key may be written to server logs.
+		API key may appear in monitoring tools and analytics.
+		*/
 	
 	public MovieDetails getMovieDetails(String imdbId) {
 		URI uri = UriComponentsBuilder
